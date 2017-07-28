@@ -2,6 +2,7 @@
 """
 converts grb2 files to CSV then converts the CSV into our special format
 """
+import subprocess
 import os
 ROOT = os.path.realpath('.')
 NAM_CSV = ROOT + '/data/NAM/csv'
