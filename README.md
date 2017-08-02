@@ -56,15 +56,7 @@ In the scritps folder is a python script named pandas_parser.py. The scripts was
 - python3
 - pandas 0.20.3 
 - absolute file paths (specific to the current working computer) 
+
 The intent of this script is to parse all csv data, across all 4 initialization times (0000, 0600, 1200, 1800) for a given parameter (in this case, TMP aka temperature) and output csv files per mb (millibar) containing only initialization time and value (of the parameter). 
 
 To run this script, change the absolute file paths to ones matching your own computer. 
-
-##### Python file i/o 
-Use the following as a template for performing python file i/o
-```python
-with open('foo') as f:
-    for line in f:
-        pass
-```
-Some tutorials and resources online may tell you to use the `readlines()` method, *DON'T!* It is extremely inefficient and will cause your computer to become unresponsive when reading large files (files larger than kilobytes which all of our data files are).
