@@ -2,3 +2,5 @@
 archive/
 
 \.vscode/
+
+__pycache__/
