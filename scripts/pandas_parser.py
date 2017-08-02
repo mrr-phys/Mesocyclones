@@ -2,8 +2,10 @@
 import os
 import pandas
 
+# directory containing the 4 csv files of a parameter (based on initialization time i.e. 0000, 0600, 1200, 1800)
 NAM_RAW = r'C:\Users\dontran\Downloads\csv\raw'
-NAM_EXTRACTED = r'C:\Users\dontran\Downloads\csv\extracted'
+# directory containing the csv files split per mb (millibar)
+NAM_EXTRACTED = r'C:\Users\dontran\Downloads\csv\extracted' 
 
 def main():
     """ main """
