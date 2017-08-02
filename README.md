@@ -51,7 +51,16 @@ full documentation on [wgrib2](http://www.cpc.ncep.noaa.gov/products/wesley/wgri
 > *extra notes:* 
 refer to above, what this command does it create a simple inventory of all the data is has matching the "regular expression" "TMP" and then uses that information to export only temperature (aka "TMP) data. "Regular expression" is a computer nerd term for, basically, google searching (expect regular expressions are much more powerful than a google search, google it to find out more). 
 
-#### Python file i/o 
+#### About the Python Script
+In the scritps folder is a python script named pandas_parser.py. The scripts was developed with the following dependencies: 
+- python3
+- pandas 0.20.3 
+- absolute file paths (specific to the current working computer) 
+The intent of this script is to parse all csv data, across all 4 initialization times (0000, 0600, 1200, 1800) for a given parameter (in this case, TMP aka temperature) and output csv files per mb (millibar) containing only initialization time and value (of the parameter). 
+
+To run this script, change the absolute file paths to ones matching your own computer. 
+
+##### Python file i/o 
 Use the following as a template for performing python file i/o
 ```python
 with open('foo') as f:
